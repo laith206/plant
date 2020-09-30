@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" id="vc_linecons-css" href="css/vc_linecons_icons.min.css" type="text/css" media="all">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>plant!</title>
+</head>
+
+<body>
+
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <svg width="150" height="90" viewBox="0 0 716 265">
+            <image x="6" y="6" width="704" height="253"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEU
+                gAAAsAAAAD9CAYAAACyVMG1AAAgAElEQVR4nO3dP2w
+                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">
+            </image>
+        </svg>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" nav collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-ul navbar-nav ml-auto ">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="#HOME">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#best-selling">best-selling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#PLANT-TYPES">PLANT TYPES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#PLANT-BY-ROOM">PLANT BY ROOM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Our-video">Our-video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#BONSAI-PLANt">BONSAI PLANT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Our-Services">Our-Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                </li>
+                <button class="btn btn-info aa1">Join</button>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--Home -->
+    <section class="HOME " id="HOME">
+        <div class="contener">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <!--  
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>   -->
+                    </ol>
+                    <div class="carousel-inner corso  ">
+                        <div class=" carousel-item active">
+                            <div class="">
+                                <img src="img/HOME1.jpg" class=" w-100" alt="...">
+                                <div class="back position-absolute ">
+
+                                </div>
+                            </div>
+
+                            <div class=" carousel-caption   w-50 h-50 text-center d-flex flex-column ">
+                                <div class="aaa mb-3 d-flex flex-column text-center justify-content-center">
+                                    <h2 class="anmi1 ">Living Room Plants</h2>
+                                    <p class=" lead anmi2">
+                                        All of our plants arrive potted and living room ready! Our...
+                                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                            data-target="#collapseExample11" aria-expanded="false"
+                                            aria-controls="collapseExample11">
+                                            Read More
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="collapseExample11">
+                                        <div class="card card-body">
+                                            Our collection of indoor
+                                            plants for your living room will not only
+                                            uplift your space but your mood, and
+                                            creativity. Our collection of Indoor House
+                                            Plants include Succulents, Floor
+                                            plants, Hanging plants, Air plants, and more!
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="carousel-item ">
+                            <img src="img/home2.jpg" class="d-block w-100" alt="...">
+                            <div class="back position-absolute ">
+
+                            </div>
+                            <div class="carousel-caption w-50 h-50 text-center d-flex flex-column">
+                                <div class="aaa mb-3 d-flex flex-column text-center justify-content-center">
+                                    <h2 class="anmi3 ">BedRoom Plants</h2>
+                                    <p class=" lead anmi4">
+                                        All of our plants arrive potted and bed room ready! Our...
+                                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                            data-target="#collapseExample11" aria-expanded="false"
+                                            aria-controls="collapseExample11">
+                                            Read More
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="collapseExample11">
+                                        <div class="card card-body">
+                                            Our collection of indoor
+                                            plants for your living room will not only
+                                            uplift your space but your mood, and
+                                            creativity. Our collection of Indoor House
+                                            Plants include Succulents, Floor
+                                            plants, Hanging plants, Air plants, and more!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img src="img/best_house_plants_primary.jpg" class="d-block w-100 " alt="...">
+                            <div class="back position-absolute ">
+
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="aaa mb-3 d-flex flex-column ">
+                                    <h2 class="anmi1 ">Kitchen Room Plants</h2>
+                                    <p class=" lead anmi2">
+                                        All of our plants arrive potted and kitchen room ready! Our...
+                                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                            data-target="#collapseExample11" aria-expanded="false"
+                                            aria-controls="collapseExample11">
+                                            Read More
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="collapseExample11">
+                                        <div class="card card-body">
+                                            Our collection of indoor
+                                            plants for your kitchen room will not only
+                                            uplift your space but your mood, and
+                                            creativity. Our collection of Indoor House
+                                            Plants include Succulents, Floor
+                                            plants, Hanging plants, Air plants, and more!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- best-selling -->
+    <section class="best-selling my-5 " id="best-selling">
+        <div class="container">
+            <div class="row d-flex flex-column justify-content-center">
+                <h2 class=" text-center my-4">best-selling</h2>
+                <div class="row">
+
+
+
+                    <div class="best-img1 col-lg-4   ">
+
+                        <img src="img/sell.png" class=" img-fluid " alt="selling">
+
+                        <div class="sell-back1">
+
+                            <div class="text1">
+
+                                <span class="ico1 mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico1 mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico1 mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico1 mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="best-img col-lg-4  ">
+                        <img src="img/sell2.png" class=" img-fluid" alt="selling">
+
+                    </div>
+                    <div class="best-img col-lg-4    ">
+
+                        <img src="img/sell3.png" class=" img-fluid w-100" alt="selling">
+                        <div class="sell-back w-100">
+                            <div class="text w-100 position-absolute bg-info">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="PLANT-TYPES  my-5" id="PLANT-TYPES">
+        <div class="container">
+            <h2 class=" text-center">PLANT-TYPES</h2>
+            <div class="row justify-content-center text-center">
+                <div class="house-PLANt mt-5 col-lg-12  d-flex flex-wrap justify-content-center">
+                    <div class="house-PLANt-text text-center">
+                        <h2> ------ House Plant Delivery ------ </h2>
+                        <p class=" lead">From upright snake plants
+                            to spread out palms, the best
+                            houseplants add life and
+                            style to <button class="btn btn-outline-secondary">Read More</button></p>
+
+                    </div>
+
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/type1.webp" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative ">
+                        <img src="img/type2.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/type3.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/type4.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/type4.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/type4.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="Air-PLANt mt-5 col-lg-12  d-flex flex-wrap justify-content-center">
+                    <div class="house-PLANt-text text-center">
+                        <h2> ------ Air-PLANt Delivery ------ </h2>
+                        <p class=" lead">As the ultimate
+                            low-maintenance plant, air
+                            plants don’t even need soil to
+                            survive! Constant air
+                            <button class="btn btn-outline-secondary">Read More</button></p>
+
+                    </div>
+
+                    <div class="TYPES-img col-lg-3  ml-1 position-relative  ">
+                        <img src="img/air-pln1.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/air-pln2.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TYPES-img col-lg-3 ml-1 position-relative  ">
+                        <img src="img/air-pln3.png" class=" img-fluid " alt="selling">
+                        <div class="sell-back">
+                            <div class="text">
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="PLANT-BY-ROOM  my-5 " id="PLANT-BY-ROOM">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <h2 class="mb-5 text-dark">PLANT-BY-ROOM</h2>
+
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions2" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions2" data-slide-to="0" class="active d-none"></li>
+                            <li data-target="#carouselExampleCaptions2" data-slide-to="1" class=" d-none"></li>
+                        </ol>
+
+                        <div class="carousel-inner corso ">
+                            <div class=" mb-3 d-flex flex-column text-center justify-content-center">
+                                <h2 class=" ">living room Plants</h2>
+                                <p>
+                                    All of our plants arrive potted and living room ready! Our...
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample1" aria-expanded="false"
+                                        aria-controls="collapseExample1">
+                                        Read More
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample1">
+                                    <div class="card card-body">
+                                        Our collection of indoor
+                                        plants for your living room will not only
+                                        uplift your space but your mood, and
+                                        creativity. Our collection of Indoor House
+                                        Plants include Succulents, Floor
+                                        plants, Hanging plants, Air plants, and more!
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div
+                                class="col-lg-12 text-center carousel-item  active d-lg-flex d-sm-block justify-content-sm-center align-items-center">
+                                <div class="img-hover col  ">
+                                    <img src="img/type1.webp" class=" img-fluid">
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                                <div class="img-hover col ">
+                                    <img src="img/type2.png" class=" img-fluid">
+
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <img src="img/type3.png" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class=" carousel-item col-lg-12 text-center d-lg-flex d-sm-block justify-content-center align-items-center">
+
+                                <div class="img-hover col ">
+                                    <img src="img/liv-plan1.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col ">
+                                    <img src="img/liv-plan2.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <div class=" position-relative">
+                                        <img src="img/liv-plan3.jfif" class=" img-fluid">
+                                        <div class="back1  text-center">
+                                            <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                            <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-vav text-center">
+                            <a class="carousel-control" href="#carouselExampleCaptions2" role="button"
+                                data-slide="prev">
+                                <span
+                                    class=" bg-light fas fa-chevron-left text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control" href="#carouselExampleCaptions2" role="button"
+                                data-slide="next">
+                                <span
+                                    class=" bg-light fas fa-chevron-right text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions3" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions3" data-slide-to="0" class="active d-none"></li>
+                            <li data-target="#carouselExampleCaptions3" data-slide-to="1" class=" d-none"></li>
+                        </ol>
+
+                        <div class="carousel-inner corso ">
+                            <div class=" mb-3 d-flex flex-column text-center justify-content-center">
+                                <h2 class=" ">Bedroom Plants</h2>
+                                <p>
+                                    Plants in your bedroom not only
+                                    purify the air while you sleep...
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        Read More
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        sleep and uplift your
+                                        bedroom décor, but can actually help you sleep better! Shop our Peace Lily floor
+                                        plant, Aloe Vera plant, English Ivy floor plant, Rosemary plant, and other picks
+                                        for more restful sleep
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div
+                                class="col-lg-12 text-center carousel-item  active d-lg-flex d-sm-block justify-content-sm-center align-items-center">
+                                <div class="img-hover col  ">
+                                    <img src="img/bed-plan1.png" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                                <div class="img-hover col ">
+                                    <img src="img/bed-plan2.png" class=" img-fluid">
+
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <img src="img/bed-plan3.png" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="col-lg-12 text-center carousel-item d-lg-flex d-sm-block justify-content-center align-items-center">
+
+                                <div class="img-hover col ">
+                                    <img src="img/bed-plan4.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col ">
+                                    <img src="img/bed-plan5.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <div class=" position-relative">
+                                        <img src="img/bed-plan6.jpg" class=" img-fluid">
+                                        <div class="back1  text-center">
+                                            <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                            <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-vav text-center">
+                            <a class="carousel-control" href="#carouselExampleCaptions3" role="button"
+                                data-slide="prev">
+                                <span
+                                    class=" bg-light fas fa-chevron-left text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control" href="#carouselExampleCaptions3" role="button"
+                                data-slide="next">
+                                <span
+                                    class=" bg-light fas fa-chevron-right text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions4" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions4" data-slide-to="0" class="active d-none"></li>
+                            <li data-target="#carouselExampleCaptions4" data-slide-to="1" class=" d-none"></li>
+                        </ol>
+
+                        <div class="carousel-inner corso ">
+                            <div class=" mb-3 d-flex flex-column text-center justify-content-center">
+                                <h2 class=" ">Kitchen Plants</h2>
+                                <p>
+                                    Kitchen house plants bring nature
+                                    indoors and help purify the air! Our...
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample2" aria-expanded="false"
+                                        aria-controls="collapseExample2">
+                                        Read More
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="card card-body">
+                                        Kitchen house plants bring nature
+                                        indoors and help purify the air! Our
+                                        collection of kitchen plants include
+                                        Kitchen herb gardens, English Ivy hanging
+                                        plants, Aloe Vera plants, Fiddle Fig
+                                        floor plants, String of Pearls hanging
+                                        plants, and more!Show Less
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div
+                                class="col-lg-12 text-center carousel-item  active d-lg-flex d-sm-block justify-content-sm-center align-items-center">
+                                <div class="img-hover col  ">
+                                    <img src="img/kit-plan5.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                                <div class="img-hover col ">
+                                    <img src="img/kit-plan6.jpg" class=" img-fluid">
+
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <img src="img/kit-plan7.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="col-lg-12 text-center carousel-item d-lg-flex d-sm-block justify-content-center align-items-center">
+
+                                <div class="img-hover col ">
+                                    <img src="img/kit-plan1.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col ">
+                                    <img src="img/kit-plan2.jpg" class=" img-fluid">
+
+                                    <div class="back1 text-center">
+                                        <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                        <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                    </div>
+                                </div>
+                                <div class="img-hover col  ">
+                                    <div class=" position-relative">
+                                        <img src="img/kit-plan3.jpg" class=" img-fluid">
+                                        <div class="back1  text-center">
+                                            <i class="fas fa-link fa-1x  bg-white p-2 rounded-circle "></i>
+                                            <i class="fas fa-search fa-1x  bg-white p-2 rounded-circle "></i>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-vav text-center">
+                            <a class="carousel-control" href="#carouselExampleCaptions4" role="button"
+                                data-slide="prev">
+                                <span
+                                    class=" bg-light fas fa-chevron-left text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control" href="#carouselExampleCaptions4" role="button"
+                                data-slide="next">
+                                <span
+                                    class=" bg-light fas fa-chevron-right text-secondary p-2 rounded-circle border border-gray"
+                                    aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="Our-video my-5 " id="Our-video">
+        <div class="container ">
+            <div class="row">
+                <div class=" video-section">
+                    <div class=" video-wrapper d-lg-flex d-md-block d-sm-block text-center  col-lg-12">
+                        <div class=" col-lg-4  mr-5">
+                            <div class="content-section">
+                                <p class="display-4 text-uppercase video-title">Get To Know Us</p>
+                                <p class="video-desc text-justify">At <a href="https://www.plants.com/">plants.com</a>,
+                                    our mission is
+                                    to cultivate happiness. It's a medically proven fact that our moods, behaviors,
+                                    physical and
+                                    mental health are all influenced greatly by the home environment in which we live.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="video-desc col-lg-8 col-md-8">
+                            <div class="wrapper">
+                                <video poster="img/HOME1.jpg" class="video" controls="" controlslist="download"
+                                    __idm_id__="604262401">
+                                    <source
+                                        src="https://storage.googleapis.com/growth_static_assets/plants_intro_final.mp4"
+                                        type="video/mp4">
+                                </video>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="BONSAI-PLANT" id="BONSAI-PLANt">
+        <div class="container">
+            <div class="row">
+                <div class="bonsai-text text-center my-5">
+                    <h1>BONSAI-PLANT</h1>
+                    <p class=" lead">Bonsai (Japanese: 盆栽, lit. 'tray planting',
+                        pronounced [boɰ̃sai] (About this soundlisten))[1] is
+                        a Japanese art form which utilizes cultivation
+                        techniques to produce, in containers, small trees
+                        that mimic the shape and scale of full size
+                        trees. Similar practices exist in other cultures,
+                        including the Chinese tradition of penzai or
+                        penjing from which the art originated, and the
+                        miniature living landscapes of Vietnamese Hòn
+                        non bộ. The Japanese tradition dates back over a
+                        thousand years.</p>
+                </div>
+
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card img-card">
+                        <div class="best-img position-relative">
+                            <img src="img/bons1.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text mt-2">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">JUNIPER BONSAI</h5>
+                            <p class="card-text">Ever-beautiful and ready for creative shaping, this tiny tree has been
+                                cultivated for thousands of years to bring you calmness and serenity. But no pressure!
+                                Plant Perk: All about artful shaping and training, these trees are great for Zen
+                                relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card img-card">
+
+                        <div class="best-img position-relative  ">
+
+                            <img src="img/bons2.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text ">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GOLDEN GATE FICUS BONSAI</h5>
+                            <p class="card-text">
+                                They say some plants can be high maintenance. Try telling that to our golden gate ficus
+                                bonsai. Its ability to thrive in a variety of light conditions makes it a bonsai best
+                                seller. Plant Perk: All about artful shaping and training, these trees are great for Zen
+                                relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card img-card">
+
+                        <div class="best-img position-relative">
+                            <img src="img/bons3.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text mt-2">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JADE BONSAI</h5>
+                            <p class="card-text">
+                                Calling all beginners! Our jade bonsai is one of the easiest indoor species to maintain.
+                                With little a little patience and a hint of creativity (we’re all creative!) anyone can
+                                be a bonsai artist. Plant Perk: A healthy creative outlet for someone who’s all
+                                thumbs—none of them green.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card img-card">
+
+                        <div class="best-img position-relative">
+                            <img src="img/bons-blck1.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text mt-2">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JUNIPER BONSAI</h5>
+                            <p class="card-text">Ever-beautiful and ready for creative shaping, this tiny tree has been
+                                cultivated for thousands of years to bring you calmness and serenity. But no pressure!
+                                Plant Perk: All about artful shaping and training, these trees are great for Zen
+                                relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card img-card">
+
+                        <div class="best-img position-relative">
+                            <img src="img/bons-black2.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text mt-2">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">JADE BONSAI</h5>
+                            <p class="card-text">
+                                Calling all beginners! Our jade bonsai is one of the easiest indoor species to maintain.
+                                With little a little patience and a hint of creativity (we’re all creative!) anyone can
+                                be a bonsai artist. Plant Perk: A healthy creative outlet for someone who’s all
+                                thumbs—none of them green.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card img-card">
+                        <div class="best-img position-relative">
+                            <img src="img/bons-black3.png" class=" img-fluid " alt="selling">
+                            <div class="sell-back">
+                                <div class="text mt-2">
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-facebook "></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-twitter"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-yahoo"></i></span>
+                                    <span class="ico mx-2 d-flex  "><i class="fab fa-google"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GOLDEN GATE FICUS BONSAI</h5>
+                            <p class="card-text">
+                                They say some plants can be high maintenance. Try telling that to our golden gate ficus
+                                bonsai. Its ability to thrive in a variety of light conditions makes it a bonsai best
+                                seller. Plant Perk: All about artful shaping and training, these trees are great for Zen
+                                relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="Our-Services" id="Our-Services">
+        <div class="continer">
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section class="contact mt-5  d-sm-block text-center" id="contact">
+        <div class="container">
+            <div class="inner-contact d-lg-flex d-sm-inline-block justify-content-md-around">
+
+                <div class="con-text mt-5 w-25">
+                    <h5>About us</h5>
+                    <p class=" text-justify">7 Low Maintenance Indoor Plants (7 Plants for Beginners)
+                        by Connor B on January 6, 2020
+                        Houseplants can improve the quality of indoor air, leaving rooms smelling purer and fresher.
+                        According to NASA, they effectively filter potentially harmful volatile organic compounds (VOCs)
+                        — such as benzene
+                </div>
+
+                <div class="con-text mt-5 w-25  ml-4">
+                    <h5>Flickr</h5>
+                </div>
+
+
+                <div class="con-Hours mt-5 w-25 ml-4">
+                    <h5 class=" text-center ">Opening Hours</h5>
+                    <ul>
+                        <li>> Monday 10AM - 9PM</li>
+                        <li>> Tuesday 10AM - 9PM</li>
+                        <li>> Wednesday 10AM - 9PM</li>
+                        <li>> Thursday 10AM - 10PM</li>
+                        <li>> Friday 10AM - 10PM</li>
+                        <li>> Weekends 10AM - 11PM</li>
+                    </ul>
+                </div>
+
+                <div class="con-info mt-5 w-25 ml-4">
+                    <div class="back-info"></div>
+
+                    <h5>Contact Details</h5>
+                    <p class="text-sm-center"><i class="fas fa-map-marker-alt text-secondary"></i>Iraq, Baghdad, Hayy al
+                        Mansur, Iraq</p>
+                    <p><i class="fas fa-phone text-secondary"> </i>+46 123 456 789</p>
+                    <p><i class="fas fa-envelope text-secondary"></i>re177131@gmail.com</p>
+                    <p><i class="fab fa-facebook text-secondary"></i><a class="lists-style-none"
+                            href="https://www.facebook.com/profile.php?id=100001358434125">https://www.facebook.com</a>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="inner-footer  text-center">
+                <div class="footer-logo pt-5 mb-3">
+                    <img src="http://www.engage.veented.com/fitness/wp-content/themes/engage/img/logos/logo-light.png"
+                        alt="">
+                </div>
+                <p class="copyright mb-4">
+                    Copyright 2019. All rights reserved. Privacy Policy</p>
+                <p class="text-center">&copy; Powered By LionTech .</p>
+                <div class="footer-contact">
+                    <a class="face1" href="https://www.facebook.com/profile.php?id=100001358434125"><i
+                            class="face fab fa-facebook-f p-3 rounded-circle"></i></a>
+                    <a class="twet1" href="www.twitter.com"><i class="twet fab fa-twitter  p-3 rounded-circle "></i></a>
+                    <a class="inst1" href="www.instagram.com"><i
+                            class="inst fab fa-instagram p-3 rounded-circle "></i></a>
+                    <a class="you1" href="www.youtube.com"><i class="yout fab fa-youtube p-3 rounded-circle "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.js"></script>
+
+    <script src="js/me.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
