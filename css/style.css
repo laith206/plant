@@ -4,8 +4,8 @@ body {
     box-sizing: border-box;
     color: rgb(22, 31, 32);
 }
-
-.fas, .fab, .fa {
+.fas{ color: gray;  }
+.fab, .fa {
     color: white;
     
 }
